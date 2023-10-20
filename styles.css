@@ -47,6 +47,39 @@ nav {
 .menu {
   display: none;
 }
+.menudropdown {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden ;
+  transition: 0.5s;
+}
+.menudropdown .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+.closebtn img {
+  width: 20px;
+}
+.menudrop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.menudropdown a {
+  display: block;
+  padding: 10px;
+}
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -88,6 +121,7 @@ a:hover {
 .ha {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 a {
@@ -97,6 +131,29 @@ a {
   display: flex;
   align-items: center;
 }
+.regw {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.log {
+  font-size: 15px;
+}
+.regin {
+  border: 2px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+  border-radius: 20px;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: clamp(10px, 2.5vw, 12px);
+}
+
 .reg {
   display: flex;
   gap: 15px;
@@ -219,5 +276,13 @@ header {
   }
   .typo1 {
     font-size: clamp(40px,2.5vw,75px);
+  }
+  .tl {
+    gap: 15px;
+  }
+  .dropdown-content {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px 0px;
   }
 }

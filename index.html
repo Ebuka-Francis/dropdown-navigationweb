@@ -30,7 +30,65 @@
     <div class="container">
       <nav>
       <div class="logo"><img src="./images/logo.svg" alt="logo svg" /></div>
-      <div class="menu"><img src="./images/icon-menu.svg" alt="menu svg"></div>
+      <div class="menu">
+        <div onclick="openNav()"> 
+          <a href="javascript:void()">
+        <img src="./images/icon-menu.svg" alt="menu svg"></a>
+        </div>
+        <div id="myNav" class="menudropdown">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><img src="./images/icon-close-menu.svg" alt="close menu svg"></a>
+
+          <div id="myNav" class="menudrop">
+          <div class="dropdown">
+            <div class="ha">
+            <div>
+              <a href="#">Features  </a></div>
+              <div class="rotateimg"><img src="./images/icon-arrow-up.svg" alt="icon-arrow-up"></div>
+          </div>
+          <div class="dropdown-content">
+            <div class="tl">
+            <div class="tlist">
+              <div><img src="./images/icon-todo.svg" alt="todo svg"></div>
+              <div class="typo4">Todo List</div>
+            </div>
+            <div class="tlist">
+              <div><img src="./images/icon-calendar.svg" alt="calender svg"></div>
+              <div class="typo4">Calendar</div>
+            </div>
+            <div class="tlist">
+              <div><img src="./images/icon-reminders.svg" alt="icon-reminders svg"></div>
+              <div class="typo4">Reminders</div>
+            </div>
+            <div class="tlist">
+              <div><img src="./images/icon-planning.svg" alt="icon-planning svg"></div>
+              <div class="typo4">planning</div>
+            </div>
+          </div>
+          </div></div>
+          <div class="dropdown">
+            <div class="ha">
+            <div>
+            <a href="#">Company</a></div>
+            <div class="rotateimg"><img src="./images/icon-arrow-up.svg" alt="icon-arrow-up"></div></div>
+          <div class="dropdown-content">
+            <div class="tl">
+              <div class="typo4">History</div>
+              <div class="typo4">Our team</div>
+              <div class="typo4">Blog</div>
+            </div>
+          </div></div>
+          <div class="link"><a href="#">Careers</a></div>
+          <div class="link"><a href="#">About</a></div>
+
+        </div>
+        <div class="regw">
+          <div class="log">Login</div>
+          <div class="regin">Register</div>
+        </div>
+
+      </div>
+      </div>
       <div class="topnav">
         <div class="dropdown">
           <div class="ha">
@@ -113,5 +171,8 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+
+    <script src="main.js"></script>
+
   </body>
 </html>
